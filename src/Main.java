@@ -2,17 +2,19 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     static double calculator(double a, char operator, double b) {
-        if(operator == '+') {
-            return a + b;
+        double result = 0;
+        if (operator == '+') {
+            result = a + b;
         } else if (operator == '-') {
-            return a - b;
+            result = a - b;
         } else if (operator == '*') {
-            return a * b;
+            result = a * b;
         } else if (operator == '/') {
-            return a / b;
+            result = a / b;
         } else if (operator == '%') {
-            return a % b;
+            result = a % b;
         }
+        return result;
     }
     public static void main(String[] args) {
         System.out.println(calculator(5, '+', 6));
